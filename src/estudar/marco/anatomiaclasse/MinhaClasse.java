@@ -1,7 +1,5 @@
 package estudar.marco.anatomiaclasse;
 public class MinhaClasse {
-
-    
     public static void main(String[] args) {
         int ola = 0;
         int valor = 1;
