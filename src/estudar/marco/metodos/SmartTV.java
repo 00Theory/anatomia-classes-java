@@ -20,6 +20,11 @@ public class SmartTV {
         volume -= 5;
     }
 
+    /**
+     * Este método TrocarCanal é utilizado para alterar a variável
+     * canal por incrementos ou decrementos gerados de maneira
+     * aleatória.
+     */
     public void TrocarCanal(){
         canal += RandomGenerator.getDefault().nextInt(-1, 2);
     }
