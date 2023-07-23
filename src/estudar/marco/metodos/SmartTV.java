@@ -1,6 +1,5 @@
 package estudar.marco.metodos;
 
-import java.util.Random;
 import java.util.random.RandomGenerator;
 
 public class SmartTV {
