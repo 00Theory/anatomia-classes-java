@@ -1,6 +1,5 @@
 package estudar.marco.metodos;
 
-import java.util.random.RandomGenerator;
 
 /**
  * 
@@ -48,6 +47,6 @@ public class SmartTV {
      * aleatória.
      */
     public void TrocarCanal(){
-        canal += RandomGenerator.getDefault().nextInt(-1, 2);
+        canal += 1;
     }
 }

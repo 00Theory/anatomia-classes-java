@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MinhaClasse",
+            "request": "launch",
+            "mainClass": "estudar.marco.TerminalArgumentos.MinhaClasse",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "Anatomia",
+            "request": "launch",
+            "mainClass": "estudar.marco.anatomiaclasse.Anatomia",
+            "projectName": "estudar-java-basico_36d17113",
+            "args": ["Marco", "Lima", "25", "173"]
+        },
+        {
+            "type": "java",
+            "name": "UsuarioMetodos",
+            "request": "launch",
+            "mainClass": "estudar.marco.metodos.UsuarioMetodos",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "ExpressoesLogicas",
+            "request": "launch",
+            "mainClass": "estudar.marco.variaveisTipos.ExpressoesLogicas",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "Relacionais",
+            "request": "launch",
+            "mainClass": "estudar.marco.variaveisTipos.Relacionais",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "Ternario",
+            "request": "launch",
+            "mainClass": "estudar.marco.variaveisTipos.Ternario",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "Ternarios",
+            "request": "launch",
+            "mainClass": "estudar.marco.variaveisTipos.Ternarios",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "TiposVariaveisConcatenacao",
+            "request": "launch",
+            "mainClass": "estudar.marco.variaveisTipos.TiposVariaveisConcatenacao",
+            "projectName": "estudar-java-basico_36d17113"
+        }
+    ]
+}
