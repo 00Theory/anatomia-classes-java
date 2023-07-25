@@ -8,9 +8,7 @@ public class EstruturasRepeticao{
             System.out.println("PULAR O " + numero);
 		    continue;
         }
-			System.out.println(numero);
-		
-		
+			System.out.println(numero);	
 	}
     }
 }
