@@ -1,3 +1,4 @@
+package estudar.marco;
 public class dada {
     public static void main(String[] args) {
         //os argumentos começam com indice 0
