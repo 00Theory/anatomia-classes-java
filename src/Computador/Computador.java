@@ -1,4 +1,6 @@
-package Mensageiros;
+package Computador;
+
+import Mensageiros.FacebookMessenger;
 
 public class Computador {
     
