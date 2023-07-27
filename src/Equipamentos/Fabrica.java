@@ -15,12 +15,15 @@ public class Fabrica {
         Digitalizadora digitalizadora = emf;
         Copiadora copiadora = emf;
 
+        //Deskjet implementa um papel de impressora
         Impressora impressora2 = new Deskjet();
         impressora2.imprimir();
 
+        //Scanner implementa um papel (interface) de Digitalizadora
         Digitalizadora digitalizadora2 = new Scanner();
         digitalizadora2.digitalizar();
 
+        //Xerox implementa uma interface de Copiadora
         Copiadora copiadora2 = new Xerox();
         copiadora2.copiar();
 
