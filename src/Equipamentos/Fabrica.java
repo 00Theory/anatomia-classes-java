@@ -27,7 +27,6 @@ public class Fabrica {
         Copiadora copiadora2 = new Xerox();
         copiadora2.copiar();
 
-
         impressora.imprimir();
         digitalizadora.digitalizar();
         copiadora.copiar();
