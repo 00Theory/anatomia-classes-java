@@ -34,7 +34,7 @@ public class ListaEncadeada<T> {
         NoListaEncadeada<T> noAux = referenciaEntrada;
         NoListaEncadeada<T> noRetorno = null;
 
-        for (int i = 0; i < this.size(); i++){
+        for (int i = 0; i <= index; i++){
             noRetorno = noAux;
             noAux = noAux.getProximoNoListaEncadeada();
         }

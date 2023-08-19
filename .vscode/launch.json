@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "EstruturaDados.listas.Main",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -23,7 +30,12 @@
             "request": "launch",
             "mainClass": "estudar.marco.anatomiaclasse.Anatomia",
             "projectName": "estudar-java-basico_36d17113",
-            "args": ["Marco", "Lima", "25", "173"]
+            "args": [
+                "Marco",
+                "Lima",
+                "25",
+                "173"
+            ]
         },
         {
             "type": "java",
