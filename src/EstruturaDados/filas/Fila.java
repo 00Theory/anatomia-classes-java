@@ -1,20 +1,21 @@
 package EstruturaDados.filas;
 
-public class Fila{
+public class Fila<T> {
     
 
-    private NoFila refNoEntrada;
+    private NoFila<T> refNoEntrada;
 
     public Fila() {
         this.refNoEntrada = null;
     }
 
-    public void enqueue(NoFila novoNo){
+    public void enqueue(T object){
+        NoFila novoNo = new NoFila(object);
         novoNo.setProximoNoFila(refNoEntrada);
         refNoEntrada = novoNo;
     }
 
-    public NoFila first(){
+    public T first(){
         if (!this.isEmpty()){
             NoFila primeiroNo = refNoEntrada;
             while (true){
@@ -25,12 +26,12 @@ public class Fila{
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject();
         }
         return null;
     }
 
-    public NoFila dequeue(){
+    public T dequeue(){
         if (!isEmpty()){
             NoFila primeiroNo = refNoEntrada;
             NoFila noAuxiliar = refNoEntrada;
@@ -44,7 +45,7 @@ public class Fila{
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject();
         }
         return null;
     }

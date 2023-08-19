@@ -1,9 +1,9 @@
 package EstruturaDados.filas;
 
-public class NoFila {
+public class NoFila<T>{
     
-    private Object object;
-    private NoFila proximoNoFila;
+    private T object;
+    private NoFila<T> proximoNoFila;
 
     public NoFila getProximoNoFila() {
         return proximoNoFila;
@@ -17,14 +17,14 @@ public class NoFila {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 
     public NoFila() {
     }
 
-    public NoFila(Object object) {
+    public NoFila(T object) {
         this.proximoNoFila = null;
         this.object = object;
     }

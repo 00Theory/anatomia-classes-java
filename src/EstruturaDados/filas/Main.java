@@ -2,31 +2,31 @@ package EstruturaDados.filas;
 
 public class Main {
     public static void main(String[] args) {
-        Fila minhaFila = new Fila();
+        Fila<String> minhaFila = new Fila<>();
 
-        minhaFila.enqueue(new NoFila("primeiro"));
-        minhaFila.enqueue(new NoFila("segundo"));
-        minhaFila.enqueue(new NoFila("terceiro"));
-        minhaFila.enqueue(new NoFila("quarto"));
-
-        System.out.println(minhaFila);
-
-        System.out.println(minhaFila.dequeue());
-        System.out.println(minhaFila);
-
-        System.out.println(minhaFila.dequeue());
-        System.out.println(minhaFila.dequeue());
-        System.out.println(minhaFila.dequeue());
+        minhaFila.enqueue("primeiro");
+        minhaFila.enqueue("segundo");
+        minhaFila.enqueue("terceiro");
+        minhaFila.enqueue("quarto");
 
         System.out.println(minhaFila);
 
-        minhaFila.enqueue(new NoFila("último"));
+        System.out.println(minhaFila.dequeue());
+        System.out.println(minhaFila);
+
+        System.out.println(minhaFila.dequeue());
+        System.out.println(minhaFila.dequeue());
+        System.out.println(minhaFila.dequeue());
+
+        System.out.println(minhaFila);
+
+        minhaFila.enqueue("sexto");
 
         System.out.println(minhaFila);
 
         System.out.println(minhaFila.first());
 
-        minhaFila.enqueue(new NoFila("sexto"));
+        minhaFila.enqueue("último");
         System.out.println(minhaFila);
 
     }
