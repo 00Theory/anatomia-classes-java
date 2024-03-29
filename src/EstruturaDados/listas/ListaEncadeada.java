@@ -53,9 +53,11 @@ public class ListaEncadeada<T> {
 
         NoListaEncadeada<T> noAnterior = getNo(index - 1);
         noAnterior.setProximoNoListaEncadeada(noPivot.getProximoNoListaEncadeada());
-        // O JVM entende que nada referencia aquele objeto então ele é deletado, já que o nó ante
-        // anterior referencia o nó depois do pivot, aquele em que se queria deletar. Ex: nó 2 aponta para o 4
+
+        // O JVM entende que nada referencia aquele objeto então ele é deletado, já que o nó
+        // anterior referencia o nó depois do pivot, aquele que se queria deletar. Ex: nó 2 aponta para o 4
         // então exclui o 3 pois nada referencia ele.
+
         return noPivot.getConteudo();
     }
 
@@ -96,11 +98,11 @@ public class ListaEncadeada<T> {
         String strRetorno = "";
         NoListaEncadeada<T> noAux = referenciaEntrada;
 
-        for(int i = 0; i< this.size(); i++){
-            strRetorno += "No[conteudo=" + noAux.getConteudo() + "]--->";
+        for(int i = 0; i < this.size(); i++){
+            strRetorno += "Nó [conteúdo = " + noAux.getConteudo() + "] ---> ";
             noAux = noAux.getProximoNoListaEncadeada();
         }
-        strRetorno += "null";
+        strRetorno += "null (Referencia a nada)";
         return strRetorno;
     }
 

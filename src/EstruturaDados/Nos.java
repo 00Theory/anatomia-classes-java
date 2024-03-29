@@ -27,6 +27,6 @@ public class Nos<T> {
 
     @Override
     public String toString() {
-        return "Nos [conteudo=" + conteudo + "]";
+        return "Nos [conteudo = " + conteudo + "]";
     }
 }

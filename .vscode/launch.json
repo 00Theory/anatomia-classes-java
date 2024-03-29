@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "EstruturaDados.Main",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "EstruturaDados.listas.Main",
             "projectName": "estudar-java-basico_36d17113"
         },

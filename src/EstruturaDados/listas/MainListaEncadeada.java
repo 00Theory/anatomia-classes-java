@@ -16,6 +16,10 @@ public class MainListaEncadeada {
 
     System.out.println(minhaListaEncadeada.remove(1));
     minhaListaEncadeada.add("teste 4");
+    System.out.println(minhaListaEncadeada.get(2));
+
+    System.out.println("-----------");
+    
     System.out.println(minhaListaEncadeada);
     }
 }

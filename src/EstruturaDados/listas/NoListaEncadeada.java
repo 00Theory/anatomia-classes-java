@@ -33,17 +33,17 @@ public class NoListaEncadeada<T> {
 
     @Override
     public String toString() {
-        return "NoListaEncadeada [conteudo=" + conteudo + "]";
+        return "NoListaEncadeada [conteudo = " + conteudo + "]";
     }
 
     public String toStringEncadeado(){
-        String str = "NoListaEncadeada [conteudo=" + conteudo + "]";
+        String str = "NoListaEncadeada [conteudo = " + conteudo + "]";
 
         if (proximoNoListaEncadeada != null){
-            str += "->" + proximoNoListaEncadeada.toString();
+            str += "-> " + proximoNoListaEncadeada.toString();
         }
         else{
-            str += "->null";
+            str += "-> null";
         }
         return str;
     }
