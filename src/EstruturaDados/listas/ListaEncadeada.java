@@ -16,7 +16,7 @@ public class ListaEncadeada<T> {
         }
 
         NoListaEncadeada<T> noAux = referenciaEntrada;
-        for (int i = 0; i < this.size()-1; i++){
+        for (int i = 0; i < size() - 1; i++){
             noAux = noAux.getProximoNoListaEncadeada();
         }
 
@@ -43,7 +43,9 @@ public class ListaEncadeada<T> {
     }
 
     public T remove(int index){
-        NoListaEncadeada<T> noPivot = this.getNo(index);
+        validaIndice(index);
+        NoListaEncadeada<T> noPivot = getNo(index);
+
         if (index == 0){
             referenciaEntrada = noPivot.getProximoNoListaEncadeada();
             return noPivot.getConteudo();
@@ -65,6 +67,9 @@ public class ListaEncadeada<T> {
                 tamanhoLista++;
                 if (referenciaAux.getProximoNoListaEncadeada() != null){
                     referenciaAux = referenciaAux.getProximoNoListaEncadeada();
+                }
+                else{
+                    break;
                 }
             }
             else{
@@ -92,11 +97,10 @@ public class ListaEncadeada<T> {
         NoListaEncadeada<T> noAux = referenciaEntrada;
 
         for(int i = 0; i< this.size(); i++){
-            strRetorno += "No[conteudo=" + noAux.getConteudo() + "]";
+            strRetorno += "No[conteudo=" + noAux.getConteudo() + "]--->";
             noAux = noAux.getProximoNoListaEncadeada();
         }
         strRetorno += "null";
-        
         return strRetorno;
     }
 
