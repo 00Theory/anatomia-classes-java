@@ -84,4 +84,20 @@ public class ListaCircular<T> {
         return tamanholista;
     }
 
+    @Override
+    public String toString() {
+        String strRetorno = "";
+
+        No<T> noAux = this.cauda;
+        for(int i = 0; i < this.size(); i++){
+            strRetorno += "[No {conteúdo = " + noAux.getConteudo()+ "}] -->\n";
+            noAux = noAux.getNoPosterior();
+        }
+
+        strRetorno += this.size() != 0 ? "(Retorna ao início)" : "[0 - Vazio]";
+
+        return strRetorno + "--> null";
+    }
+
+    
 }
