@@ -5,11 +5,11 @@ public class NoFila<T>{
     private T object;
     private NoFila<T> proximoNoFila;
 
-    public NoFila getProximoNoFila() {
+    public NoFila<T> getProximoNoFila() {
         return proximoNoFila;
     }
 
-    public void setProximoNoFila(NoFila proximoNoFila) {
+    public void setProximoNoFila(NoFila<T> proximoNoFila) {
         this.proximoNoFila = proximoNoFila;
     }
 

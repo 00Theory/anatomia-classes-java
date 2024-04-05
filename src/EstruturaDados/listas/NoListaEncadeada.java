@@ -3,7 +3,7 @@ package EstruturaDados.listas;
 public class NoListaEncadeada<T> {
     
     private T conteudo;
-    private NoListaEncadeada proximoNoListaEncadeada;
+    private NoListaEncadeada<T> proximoNoListaEncadeada;
     
     public NoListaEncadeada() {
         this.proximoNoListaEncadeada = null;
@@ -13,7 +13,7 @@ public class NoListaEncadeada<T> {
         this.conteudo = conteudo;
     }
 
-    public NoListaEncadeada(T conteudo, NoListaEncadeada proximoNoListaEncadeada) {
+    public NoListaEncadeada(T conteudo, NoListaEncadeada<T> proximoNoListaEncadeada) {
         this.conteudo = conteudo;
         this.proximoNoListaEncadeada = proximoNoListaEncadeada;
     }
@@ -24,10 +24,10 @@ public class NoListaEncadeada<T> {
     public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
-    public NoListaEncadeada getProximoNoListaEncadeada() {
+    public NoListaEncadeada<T> getProximoNoListaEncadeada() {
         return proximoNoListaEncadeada;
     }
-    public void setProximoNoListaEncadeada(NoListaEncadeada proximoNoListaEncadeada) {
+    public void setProximoNoListaEncadeada(NoListaEncadeada<T> proximoNoListaEncadeada) {
         this.proximoNoListaEncadeada = proximoNoListaEncadeada;
     }
 

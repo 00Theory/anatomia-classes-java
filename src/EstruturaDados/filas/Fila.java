@@ -10,14 +10,14 @@ public class Fila<T> {
     }
 
     public void enqueue(T object){
-        NoFila novoNo = new NoFila(object);
+        NoFila<T> novoNo = new NoFila<>(object);
         novoNo.setProximoNoFila(refNoEntrada);
         refNoEntrada = novoNo;
     }
 
     public T first(){
         if (!this.isEmpty()){
-            NoFila primeiroNo = refNoEntrada;
+            NoFila<T> primeiroNo = refNoEntrada;
             while (true){
                 if (primeiroNo.getProximoNoFila() != null){
                     primeiroNo = primeiroNo.getProximoNoFila();
@@ -33,8 +33,8 @@ public class Fila<T> {
 
     public T dequeue(){
         if (!isEmpty()){
-            NoFila primeiroNo = refNoEntrada;
-            NoFila noAuxiliar = refNoEntrada;
+            NoFila<T> primeiroNo = refNoEntrada;
+            NoFila<T> noAuxiliar = refNoEntrada;
             while (true){
                 if (primeiroNo.getProximoNoFila() != null){
                     noAuxiliar = primeiroNo;
@@ -57,7 +57,7 @@ public class Fila<T> {
     @Override
     public String toString() {
         String stringRetorno = "";
-        NoFila noAuxiliar = refNoEntrada;
+        NoFila<T> noAuxiliar = refNoEntrada;
 
         if (refNoEntrada != null){
             while (true){
