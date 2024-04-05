@@ -96,7 +96,7 @@ public class ListaCircular<T> {
 
         strRetorno += this.size() != 0 ? "(Retorna ao início)" : "[0 - Vazio]";
 
-        return strRetorno + "--> null";
+        return strRetorno;
     }
 
     
