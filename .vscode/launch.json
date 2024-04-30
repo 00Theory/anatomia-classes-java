@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "EstruturaDados.equalshashcode.Main",
+            "projectName": "estudar-java-basico_36d17113"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "EstruturaDados.arvores.Main",
             "projectName": "estudar-java-basico_36d17113"
         },

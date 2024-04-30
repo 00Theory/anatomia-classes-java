@@ -1,6 +1,5 @@
 package EstruturaDados.arvores.model;
 
-import java.util.Objects;
 
 public class Obj extends ObjArvore<Obj> {
     
