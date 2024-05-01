@@ -1,4 +1,4 @@
-package EstruturaDados.equalshashcode;
+package EstruturaDados.stack;
 
 import java.util.Objects;
 
@@ -39,5 +39,7 @@ public class Carro {
     public String toString() {
         return "Carro [marca=" + marca + "]";
     }
+
+    
 
 }
